@@ -1,0 +1,54 @@
+# Ignorar archivos de configuración de entornos
+.env
+*.env
+
+# Ignorar archivos de Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.pdb
+
+# Ignorar archivos de instalación
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.log
+
+# Ignorar archivos de configuración del sistema
+.vscode/
+.idea/
+.DS_Store
+*.swp
+*.swo
+
+# Ignorar dependencias de npm
+node_modules/
+
+# Ignorar archivos de Docker
+Dockerfile
+docker-compose.yml
+docker-compose.override.yml
+
+# Ignorar archivos de control de versiones
+.git/
+.gitignore
+.gitattributes
+
+# Ignorar archivos de pruebas
+tests/
+*.test.js
+*.spec.js
+coverage/
+junit.xml
+.nyc_output/
+
+# Ignorar archivos de configuración del entorno
+.vscode/
+.idea/
+
+# Ignorar archivos de configuración específicos de sistema operativo
+Thumbs.db
+

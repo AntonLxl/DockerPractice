@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+
+  backend:
+    build:
+      context: ./backend
+    ports:
+      - "5000:5000"
+    environment:
+      MONGO_URI: ${MONGO_URI}  # Define la variable de entorno MONGO_URI para la conexión a MongoDB
+    # depends_on:
+    #   - mongo
+
+  frontend:
+    build:
+      context: ./frontend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend  # El servicio frontend depende del backend para estar en funcionamiento
+
+  # mongo:
+  #   image: mongo:latest
+  #   ports:
+  #     - "27017:27017"
+  #   volumes:
+  #     - mongo-data:/data/db
+
+# volumes:
+#   mongo-data:
+
